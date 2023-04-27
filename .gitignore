@@ -20,3 +20,14 @@ package-lock.json
 img
 node_modules
 
+
+.DS_Store
+package-lock.json
+.sass-cache/
+*.css.map
+*.sass.map
+*.scss.map
+*.sh
+img
+node_modules
+
