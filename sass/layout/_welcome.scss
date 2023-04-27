@@ -1,0 +1,46 @@
+.welcome{
+    padding:16rem 10rem;
+   
+    text-align: center;
+    @include respond(phone){
+        padding:5rem 2rem;
+     
+    }
+    
+    .section-heading{
+        margin-bottom:5rem;
+    }
+    .welcome-services-heading{
+        margin:2rem 0;
+    }
+    .row{
+
+        .col-3{
+            padding:2rem 1rem;
+            flex:1 0 calc(100%/3);
+            display:flex;
+            flex-direction: column;
+
+            .basic-text{
+                flex:1;
+            }
+            .welcome-icon{
+                color:var(--color-battleship-gray);
+                margin:2rem 0;
+            }
+        }
+        @include respond(tab-port){
+            .col-3{
+                flex:1 0 calc(100%/2);
+             
+            }
+         }
+         @include respond(phone){
+            .col-3{
+                flex:1 0 100%;
+             
+            }
+         }
+       
+    }
+}

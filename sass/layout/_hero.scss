@@ -1,0 +1,42 @@
+.hero{
+    
+    &__box{
+        height:100dvh;
+        width:100dvw;
+        overflow: hidden;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        position:relative;
+        z-index:900;
+            .hero-img{
+                
+                @include abs-center;
+                z-index:100;
+               
+            }
+            .active{
+                z-index:900;
+                animation:10s ease-in zoomImg ;
+            }
+        
+       
+        &--content{
+            position:relative;
+            z-index:1000;
+            width:50rem;
+            height:50rem;
+            text-align: center;
+            .hero-heading{
+                color:#fff;
+                margin:2rem 0;
+                &-em{
+                    color:var(--color-apricot);
+                }
+            }
+            .hero-text{
+                color:#fff;
+            }
+        }
+    }
+}

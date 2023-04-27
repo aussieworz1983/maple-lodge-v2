@@ -1,0 +1,49 @@
+.rooms{
+    .row{
+        @include respond (phone){
+            :nth-child(3){
+               order:4;
+            }
+            :nth-child(5){
+                order:3;
+             }
+        }
+       
+    }
+    &__content{
+        
+        display:flex;
+        flex-direction: column;
+        width:100%;
+        height:100%;
+        justify-content: center;
+        padding:0 3rem;
+        >*:not(:last-child){
+            margin-bottom:2rem;
+        }
+        &--one{
+            background-color: var(--color-tea-green);
+            @include respond(phone){
+               padding:5rem;
+            
+            }
+        }
+        &--two{
+            background-color: var(--color-dutch-white);
+            @include respond(phone){
+                padding:5rem;
+                
+             }
+        }
+        &--three{
+            background-color: var(--color-pistachio);
+            @include respond(phone){
+                padding:5rem;
+             }
+        }
+    }
+    &__img{
+        height:100%;
+        width:100%;
+    }
+}

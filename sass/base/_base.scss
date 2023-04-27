@@ -1,0 +1,47 @@
+:root{
+   --color-battleship-gray: rgb(150, 142, 133);
+   --color-battleship-gray-opace: rgba(150, 142, 133, 0.6);
+   --color-pistachio:rgb(140, 192, 132);
+   --color-pistachio-opace:rgba(140, 192, 132,0.6);
+   --color-tea-green:rgb(193, 215, 174);
+   --color-dutch-white:rgb(236, 220, 176);
+   --color-apricot:rgb(255, 202, 177);
+   --color-apricot-opace:rgb(255, 202, 177,0.6);
+}
+
+*,
+* ::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration:none;
+}
+
+.hide{
+    @include hide;
+}
+.show{
+    @include show;
+}
+.fade-in{
+    animation: fadeIn 1s;
+}
+.fade-out{
+    animation: fadeOut 1s;
+}

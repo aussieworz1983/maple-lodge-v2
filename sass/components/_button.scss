@@ -1,0 +1,104 @@
+.btn-wrapper{
+    margin:2rem 0;
+    .btn{
+        &,
+        &:link,
+        &:visited {
+          
+           border-radius: 25px;
+          
+           text-transform: uppercase;
+           text-decoration: none;
+           padding: 1.6rem;
+           font-size: 1.6rem;
+           display: inline-block;
+           transition: all .2s;
+           position: relative;
+  
+           
+          //Change for the <button> element
+          border: none;
+          cursor: pointer;
+        }
+  
+       
+  
+        &:active,
+        &:focus {
+           outline: none;
+           transform: translateY(-1rem);
+           box-shadow: 0 .5rem 1rem rgba(#000, .2);
+        }
+        &-primary{
+           background-color: var(--color-battleship-gray);
+           color: #fff;
+           &:hover {
+            background-color: var(--color-battleship-gray);
+            color: var(--color-apricot);
+              transform: translateY(-1rem);
+              box-shadow: 0 1rem 2rem rgba(#000, .2);
+     
+              &::after {
+                 transform: scaleX(1.4) scaleY(1.6);
+                 opacity: 0;
+              }
+           }
+           &::after {
+            background-color: var(--color-battleship-gray);
+          }
+        }
+        &-secondary{
+           background-color:var(--color-apricot);
+           color: #000;
+           &:hover {
+              background-color: var(--color-apricot);
+              color: #000;
+              transform: translateY(-1rem);
+              box-shadow: 0 1rem 2rem rgba(#000, .2);
+     
+              &::after {
+                 transform: scaleX(1.4) scaleY(1.6);
+                 opacity: 0;
+              }
+           }
+           &::after {
+            background-color: var(--color-apricot);
+          }
+        }
+        &-tertiary{
+         background-color:var(--color-tea-green);
+         color: #000;
+         &:hover {
+            background-color: var(--color-tea-green);
+            color: #000;
+            transform: translateY(-1rem);
+            box-shadow: 0 1rem 2rem rgba(#000, .2);
+   
+            &::after {
+               transform: scaleX(1.4) scaleY(1.6);
+               opacity: 0;
+            }
+         }
+         &::after {
+          background-color: var(--color-tea-green);
+        }
+      }
+        &::after {
+           content: "";
+           display: inline-block;
+           height: 100%;
+           width: 100%;
+           border-radius: 25px;
+           position: absolute;
+           top: 0;
+           left: 0;
+           z-index: -1;
+           transition: all .4s;
+       }
+       
+       &-animated {
+           animation: moveInButton .5s ease-out .75s;
+           animation-fill-mode: backwards;
+       }
+    }
+}
