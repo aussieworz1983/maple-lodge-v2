@@ -12,17 +12,15 @@ const timer = 10000;
 
 let nextIndex = 1;
 
-function fadeInReview(){
 
-}
 function checkRevAnims(evt){
-    reviewTxt.addEventListener("animationend", function() {
+    reviewTxt.addEventListener("animationend", function(evt) {
         if(evt.animationName==="fadeOut"){
             reviewTxt.innerHTML ="";
             
         }
     }, false);
-    reviewSrc.addEventListener("animationend", function() {
+    reviewSrc.addEventListener("animationend", function(evt) {
         if(evt.animationName==="fadeOut"){
             reviewSrc.innerHTML ="";
         }
@@ -35,9 +33,10 @@ function fadeOutReview(){
     if(reviewSrc.classList.contains("fade-in")){
         reviewSrc.classList.remove("fade-in")
     }
-    checkRevAnims();
+    
     reviewTxt.classList.add("fade-out");
     reviewSrc.classList.add("fade-out");
+    checkRevAnims();
     const timeOut = setTimeout(()=>{
           changeReview(); 
     },1000);
@@ -83,7 +82,7 @@ const cycle = setInterval(()=>{
 function checkAnims(){
     imgs.forEach((img,index)=>{
         img.addEventListener("animationend", function(evt) {
-            console.log(evt.animationName)
+            
             if(evt.animationName==="fadeIn"){
                 
                 img.classList.add("active");

@@ -6,7 +6,6 @@ const ajaxCall = (name,surname,email,message,phone,guests,startDate,endDate) =>{
     data.append("name", name);
     data.append("surname", surname);
     data.append("email", email);
-    data.append("number", number);
     data.append("message", message.join(" "));
     data.append("phone", phone);
     data.append("guests", guests);
@@ -21,9 +20,13 @@ const ajaxCall = (name,surname,email,message,phone,guests,startDate,endDate) =>{
       .then((response) => {
         if (response.ok) {
           window.location.reload();
+          return response.text();
         } else {
           throw new Error(`The request failed! Status code was ${response.status}`);
         }
+      })
+      .then(function(text){
+        console.log("success", text)
       })
       .catch((error) => {
         console.error(error);
