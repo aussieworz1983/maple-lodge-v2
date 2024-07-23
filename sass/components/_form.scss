@@ -1,6 +1,12 @@
 .contact-form{
     width:100%;
-    padding:2rem 5rem;
+    padding:2rem 3rem;
+    @include respond(phone){
+        padding:2rem 1rem; 
+    }
+    @include respond(tab-land){
+        padding:2rem 1rem; 
+    }
     &__group{
         
         margin-bottom:1rem;

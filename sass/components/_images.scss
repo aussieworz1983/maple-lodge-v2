@@ -1,6 +1,6 @@
 .hero-logo{
     height:auto;
-    width:80%;
+    width:60%;
 }
 .hero-img{
     height:100%;
@@ -12,9 +12,15 @@
 .img-about{
     border:.3rem solid var(--color-tea-green);
     border-radius:50%;
+    height:16rem;
+    width:16rem;
     @include respond(phone){
-        height:25rem;
-        width:25rem;
+        height:10rem;
+        width:10rem;
+    }
+    @include respond(tab-port){
+        height:13rem;
+        width:13rem;
     }
 }
 .rooms-img{

@@ -1,5 +1,5 @@
 .reviews{
-    padding:15rem 10rem;
+    padding:4rem 16rem;
     background-image: url("/img/maple-outside-dark-new.webp");
     @include respond(tab-land){
         background-image: url("/img/maple-outside-dark-new-med.webp");
@@ -14,7 +14,7 @@
     background-size: cover;
     background-attachment: fixed;
     @include respond(phone){
-        padding:5rem 2rem;
+        padding:2rem;
     }
     &__box{
         width:100%;

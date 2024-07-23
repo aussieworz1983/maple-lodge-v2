@@ -1,5 +1,5 @@
 .contact{
-    padding:15rem 10rem;
+    padding:8rem 5rem;
     @include respond(phone){
         padding:5rem 1rem;
     }
@@ -8,13 +8,14 @@
         margin:1rem 0;
     }
     .row{
-     
+        
         .col-2{
             
             display:flex;
             justify-content: center;
             
         }
+      
         @include respond(tab-port){
             .col-2:first-of-type{
                 order:2;
@@ -56,7 +57,7 @@
         margin:8rem 0;
      }
      .basic-text{
-        font-size:1.8rem;
+        font-size:1.2rem;
         margin:1rem 0;
         
      }

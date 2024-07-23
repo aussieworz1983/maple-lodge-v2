@@ -24,14 +24,17 @@
         &--content{
             position:relative;
             z-index:1000;
-            width:50rem;
-            height:50rem;
+            width:25rem;
+            height:25rem;
             text-align: center;
             .hero-heading{
                 color:#fff;
                 margin:2rem 0;
                 &-em{
                     color:var(--color-apricot);
+                }
+                @include respond(tab-port){
+                    margin:1rem 0;
                 }
             }
             .hero-text{

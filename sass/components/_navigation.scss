@@ -45,13 +45,50 @@
         visibility: visible;
         opacity: 1;
     }
+    @include respond(phone){
+        height: 4rem;
+        width: 4rem;
+        position: fixed;
+        top: 2rem;
+        right: 2rem;
+    }
 }
 
 .nav-bar__icon{
     
     margin-top: 3.5rem;
     position: relative;
-
+    @include respond(phone){
+        margin-top: 1.85rem;
+        &,
+        &:before,
+        &:after {
+            width: .8rem;
+            height: 2px;
+            background-color: #fff;
+            display: inline-block;
+    
+        }
+    
+    
+        &:before,
+        &:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            transition: all .2s;
+    
+        }
+    
+        &:before {
+            top: -.8rem;
+    
+        }
+    
+        &:after {
+            top: .8rem;
+        }
+    }
     &,
     &:before,
     &:after {

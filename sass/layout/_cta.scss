@@ -9,7 +9,7 @@
         @include respond(tab-port){
             .col-3{
               width:100%;
-              margin-bottom:2rem;
+              margin-bottom:1rem;
             }
          }
     }
@@ -23,14 +23,14 @@
         text-align: center;
         .cta-icon{
             
-            margin:2rem 0;
+            margin:1rem 0;
         }
         
         .cta-link{
             
             text-decoration:none;
             color:var(--color-apricot);
-            font-size: 2rem;
+            font-size: 1.2rem;
             font-weight: 200;
             transition:all .3s;
             &:hover{
@@ -39,7 +39,7 @@
         }
         .basic-text{
             flex:1;
-            margin-bottom:2rem;
+            margin-bottom:1rem;
         }
       
     }
@@ -49,7 +49,7 @@
     bottom:0;
     left:0;
     width:100%;
-    height:8rem;
+    height:5rem;
     background-color: var(--color-battleship-gray);
     visibility: hidden;
     opacity:0;
@@ -63,4 +63,11 @@
         visibility: visible;
         opacity:1;
     }
+    .btn-wrapper{
+        .btn{
+            font-size: 1rem;
+            padding:.5rem;
+        }
+    }
+    
 }

@@ -56,5 +56,15 @@ order@base typo general layout page components
             @content;
         }
     }
+    @if $breakpoint == large-desktop{//1900px
+        @media (max-width:212.5em){
+            @content;
+        }
+    }
+    @if $breakpoint == extra-large-desktop{//1900px
+        @media (max-width:412.5em){
+            @content;
+        }
+    }
 
 }
