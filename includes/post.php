@@ -21,7 +21,7 @@ if(isset($_POST['name'])){
 	$body ="$name $lastName $message $phone $visitors $arrival $departure";
 	
 	
-	if(mail('info@maplelodge.uk', 'Maple Lodge Customer Enquiry', $body, $headers)){
+	if(mail('email@mail.net', 'Maple Lodge Customer Enquiry', $body, $headers)){
         echo "sent mail";
 	}else{
 		echo 'error sending mail';
